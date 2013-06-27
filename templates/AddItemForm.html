@@ -1,0 +1,36 @@
+<form class="form-horizontal" data-bind="with: $root.addItemFormModel">
+    <!-- ko template: "ErrorBlock" --><!-- /ko -->
+    <div class="control-group">
+        <label class="control-label">Name:</label>
+        <div class="controls">
+            <input class="span3" type="text" id="inputName" placeholder="Name" data-bind="value: name" maxlength="40">
+        </div>
+    </div>
+    <div class="control-group"><label class="control-label" for="inputQuantity">Quantity:</label>
+        <div class="controls">
+            <input type="text" class="span2" id="inputQuantity" placeholder="Quantity" data-bind="value: quantity" maxlength="5"/>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputDatePurchased">Date Purchased:</label>
+        <div class="controls">
+            <input id="inputDatePurchased" class="span2" type="date" data-bind="value: datePurchased" placeholder="Date Purchased"/>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputDescription">Description:</label>
+        <div class="controls">
+            <textarea rows="3" id="inputDescription" class="span5" maxlength="200" data-bind="value: description" placeholder="Description"/>
+        </div>
+    </div>
+    <div class="control-group"><label class="control-label" for="inputCost">Cost:</label>
+        <div class="controls">
+            <div class="input-prepend input-append">
+                <span class="add-on">$</span>
+                <input id="inputCost" class="span2" type="text" data-bind="value: cost" placeholder="Cost" maxlength="9"/>
+                <span class="add-on">.00</span>
+            </div>
+        </div>
+    </div>
+    <!-- ko template: {name: 'buttons'} --><!-- /ko -->
+</form>

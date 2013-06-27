@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Knockout</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <script type="text/javascript" data-main="js/app/main/app" src="js/lib/require-jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="page-header">
+            <!-- ko template: {name: $root.pageController.header()}--><!-- /ko -->
+        </div>
+        <div data-bind="template: {name: $root.pageController.mainContent()}"></div>
+    </div>
+</body>
+</html>

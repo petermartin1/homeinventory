@@ -1,0 +1,8 @@
+<!-- ko if: !formFields.isValid() -->
+<div class="alert alert-error">
+    <ul data-bind="foreach: errors">
+        <li data-bind="text: $data"></li>
+    </ul>
+</div>
+<br />
+<!-- /ko -->

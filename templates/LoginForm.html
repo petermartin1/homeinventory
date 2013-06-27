@@ -1,0 +1,15 @@
+<form class="form-horizontal" data-bind="with: $root.loginFormModel">
+    <!-- ko template: "ErrorBlock" --><!-- /ko -->
+    <div class="control-group">
+        <label class="control-label" for="inputUserId">User ID:</label>
+        <div class="controls">
+            <input class="span3" type="text" id="inputUserId" placeholder="User ID" data-bind="value: userId" maxlength="40">
+        </div>
+    </div>
+    <div class="control-group"><label class="control-label" for="inputPassword">Password:</label>
+        <div class="controls">
+            <input type="password" class="span3" id="inputPassword" placeholder="Password" data-bind="value: password" maxlength="20"/>
+        </div>
+    </div>
+    <!-- ko template: {name: 'buttons'} --><!-- /ko -->
+</form>
